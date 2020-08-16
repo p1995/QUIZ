@@ -76,7 +76,7 @@ function AnyCategory(props) {
     // setanyCategoryQuizArray(props.)
   }, []);
   return (
-    <div className="container" style={{ width: "30%" }}>
+    <div className="container">
       {showResultPage ? (
         <Result
           correctanswers={correctanswers}
