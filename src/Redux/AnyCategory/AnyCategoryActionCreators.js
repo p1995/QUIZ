@@ -6,9 +6,9 @@ export function anyCategoryQuiz(data) {
     data
   };
 }
-export function fetchAnyCategory() {
+export function fetchAnyCategory(url) {
   return (dispatch, getState) => {
-    axios.get("https://opentdb.com/api.php?amount=10").then(function(response) {
+    axios.get(url).then(function(response) {
       // handle success
       //   console.log(response.data.results);
       dispatch(anyCategoryQuiz(response.data.results));

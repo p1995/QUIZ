@@ -1,6 +1,6 @@
 import React from "react";
 import AnyCategory from "./AnyCategory";
-function Home() {
+function CategoryDetails() {
   return (
     <div>
       <AnyCategory />
@@ -8,4 +8,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default CategoryDetails;

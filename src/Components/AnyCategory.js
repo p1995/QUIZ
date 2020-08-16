@@ -13,6 +13,7 @@ import { default as $ } from "jquery";
 import Result from "./Result";
 var correctanswers = [];
 var useranswered = [];
+var url = "";
 function AnyCategory(props) {
   const [showResultPage, setshowResultPage] = useState(false);
   const submit = () => {
@@ -68,7 +69,9 @@ function AnyCategory(props) {
   //
   useEffect(() => {
     // props.anyCategoryfetch;
-    props.anyCategoryfetch();
+    url = props.url;
+    console.log(url);
+    props.anyCategoryfetch(url);
 
     // setanyCategoryQuizArray(props.)
   }, []);
@@ -154,7 +157,7 @@ const mapStateToProps = state => {
 };
 const mapDispatchToProps = dispatch => {
   return {
-    anyCategoryfetch: () => dispatch(fetchAnyCategory())
+    anyCategoryfetch: url => dispatch(fetchAnyCategory(url))
   };
 };
 export default connect(
