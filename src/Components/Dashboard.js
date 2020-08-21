@@ -21,204 +21,279 @@ function Dashboard() {
       ) : (
         <CardColumns>
           <Card
-            bg="primary"
             text="white"
             className="text-center"
             url="https://opentdb.com/api.php?amount=10"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Any Category</p>
-            </blockquote>
+            <Card.Img
+              src={require("../images/AnyCategory.jpg")}
+              alt="Card image"
+            />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Any Category</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
-            className="text-center "
+            className="text-center"
             url="https://opentdb.com/api.php?amount=10&category=9"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>General Knowlegde</p>
-            </blockquote>
+            <Card.Img
+              src={require("../images/GeneralKnowledge.jpg")}
+              alt="Card image"
+            />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">General Knowlegde</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
-            className="text-center "
+            className="text-center"
             url="https://opentdb.com/api.php?amount=10&category=10"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Entertainment:Books</p>
-            </blockquote>
+            <Card.Img src={require("../images/Books.jpg")} alt="Card image" />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Entertainment:Books</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
-            className="text-center "
+            className="text-center"
             url="https://opentdb.com/api.php?amount=10&category=12"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Entertainment:Music</p>
-            </blockquote>
+            <Card.Img src={require("../images/Music.jpg")} alt="Card image" />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Entertainment:Music</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
+
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=13"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Entertainment:Musicals & Theatres</p>
-            </blockquote>
+            {" "}
+            <Card.Img
+              src={require("../images/MusicalTheaters.jpg")}
+              alt="Card image"
+            />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Entertainment: Musicals & Theatres</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=14"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Entertainment:Telivsion</p>
-            </blockquote>
+            <Card.Img
+              src={require("../images/Television.jpg")}
+              alt="Card image"
+            />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Entertainment: Televsion</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=15"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Entertainment:Video Games</p>
-            </blockquote>
+            <Card.Img
+              src={require("../images/VideoGames.jpg")}
+              alt="Card image"
+            />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Entertainment: Video Games</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=16"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Entertainment:Board Games</p>
-            </blockquote>
+            <Card.Img
+              src={require("../images/BoardGames.jpg")}
+              alt="Card image"
+            />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Entertainment: Board Games</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=17"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Science and Nature</p>
-            </blockquote>
+            <Card.Img
+              src={require("../images/Science-Nature.jpg")}
+              alt="Card image"
+            />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Science and Nature</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=18"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Science : Computers</p>
-            </blockquote>
+            <Card.Img
+              src={require("../images/Science-Computers.jpg")}
+              alt="Card image"
+            />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Science: Computers</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=19"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Science : Mathematics</p>
-            </blockquote>
+            {" "}
+            <Card.Img
+              src={require("../images/Mathematics.jpg")}
+              alt="Card image"
+            />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic" style={{ color: "green" }}>
+                  Science: Mathematics
+                </p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=20"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Mythology</p>
-            </blockquote>
+            {" "}
+            <Card.Img src={require("../images/Myths.jpg")} alt="Card image" />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Mythology</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=21"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Sports</p>
-            </blockquote>
+            <Card.Img src={require("../images/Sports.jpg")} alt="Card image" />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Sports</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=22"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Geography</p>
-            </blockquote>
+            <Card.Img
+              src={require("../images/Geography.jpg")}
+              alt="Card image"
+            />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Geography</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=23"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>History</p>
-            </blockquote>
+            {" "}
+            <Card.Img src={require("../images/History.jpg")} alt="Card image" />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">History</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=24"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Politics</p>
-            </blockquote>
+            <Card.Img
+              src={require("../images/Politics.jpg")}
+              alt="Card image"
+            />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Politics</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
+
           <Card
-            bg="primary"
-            text="white"
-            className="text-center "
-            url="https://opentdb.com/api.php?amount=10&category=24"
-          >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Politics</p>
-            </blockquote>
-          </Card>
-          <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=25"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Art</p>
-            </blockquote>
+            {" "}
+            <Card.Img src={require("../images/Art.jpg")} alt="Card image" />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Art</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=26"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Celebrities</p>
-            </blockquote>
+            {" "}
+            <Card.Img
+              src={require("../images/Celebrity.jpg")}
+              alt="Card image"
+            />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Celebrities</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
           <Card
-            bg="primary"
             text="white"
             className="text-center "
             url="https://opentdb.com/api.php?amount=10&category=27"
           >
-            <blockquote className="blockquote mb-0 card-body">
-              <p>Animals</p>
-            </blockquote>
+            {" "}
+            <Card.Img src={require("../images/Animals.jpg")} alt="Card image" />
+            <Card.ImgOverlay>
+              <blockquote className="blockquote mb-0 card-body">
+                <p class="quizTopic">Animals</p>
+              </blockquote>
+            </Card.ImgOverlay>
           </Card>
         </CardColumns>
       )}
